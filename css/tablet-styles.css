@@ -13,7 +13,7 @@
         align-items: center;
     }
 
-    .header-item:not(:last-child) {
+    .filter-button:is(:hover, :focus) {
         margin-right: 40px;
     }
 
@@ -30,8 +30,7 @@
         color: var(--title-color);
     }
 
-    .header-link:hover,
-    .header-link:focus {
+    .filter-button:is(:hover, :focus) {
         color: var(--second-color);
     }
 
@@ -86,8 +85,7 @@
         color: #434455;
     }
 
-    .address-link:hover,
-    .address-link:focus {
+    .address-link:is(:hover, :focus) {
         color: var(--second-color);
     }
 
@@ -106,8 +104,7 @@
         align-items: center;
         margin: 0 auto;
 
-        background-image: linear-gradient(rgba(46, 47, 66, 0.7),
-                rgba(46, 47, 66, 0.7)),
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
             url(../images/office-work-tab-1x.jpg);
         background-repeat: no-repeat;
         background-position: center;
@@ -121,8 +118,7 @@
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
         .hero {
-            background-image: linear-gradient(rgba(46, 47, 66, 0.7),
-                    rgba(46, 47, 66, 0.7)),
+            background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
                 url(../images/office-work-tab-2x.jpg);
         }
     }
@@ -139,6 +135,7 @@
         row-gap: 72px;
         column-gap: 24px;
     }
+
 
     .activity-character {
         justify-content: flex-start;
@@ -182,25 +179,6 @@
         width: calc((100% - 32px) / 3);
     }
 
-    /*portfolio*/
-    .portfolio {
-        padding-top: 64px;
-        padding-bottom: 96px;
-    }
-
-    .portfolio-filter {
-        justify-content: center;
-    }
-
-    .portfolio-list {
-        column-gap: 24px;
-        justify-content: start;
-    }
-
-    .portfolio-item {
-        width: calc((100% - 24px) / 2);
-    }
-
     /*footer*/
     .footer {
         padding-top: 100px;
@@ -241,5 +219,24 @@
 
     .sub-input {
         width: 264px;
+    }
+
+    /*portfolio*/
+    .portfolio {
+        padding-top: 64px;
+        padding-bottom: 96px;
+    }
+
+    .portfolio-filter {
+        justify-content: center;
+    }
+
+    .portfolio-list {
+        column-gap: 24px;
+        justify-content: start;
+    }
+
+    .portfolio-item {
+        width: calc((100% - 24px) / 2);
     }
 }

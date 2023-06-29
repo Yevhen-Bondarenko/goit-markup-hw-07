@@ -31,8 +31,7 @@
         align-items: center;
         margin: 0 auto;
 
-        background-image: linear-gradient(rgba(46, 47, 66, 0.7),
-                rgba(46, 47, 66, 0.7)),
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
             url(../images/office-work.jpg);
         background-repeat: no-repeat;
         background-position: center;
@@ -46,8 +45,7 @@
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
         .hero {
-            background-image: linear-gradient(rgba(46, 47, 66, 0.7),
-                    rgba(46, 47, 66, 0.7)),
+            background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
                 url(../images/office-work-2x.jpg);
         }
     }
